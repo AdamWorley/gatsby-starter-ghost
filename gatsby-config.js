@@ -175,7 +175,7 @@ module.exports = {
                     `/404.html`,
                     `/offline-plugin-app-shell-fallback`,
                     `/contact`,
-                    `/prices`,
+                    // `/prices`,
                 ],
                 createLinkInHead: true,
                 addUncaughtPages: true,
