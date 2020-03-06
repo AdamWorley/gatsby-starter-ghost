@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { Layout, Card, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import lauren from "../images/lauren.jpg"
+import ghost from "../images/ghost-icon.png"
 
 /**
 * Main index page (home page)
@@ -22,44 +23,6 @@ const Index = ({ data, location, pageContext }) => {
             <MetaData location={location} />
             <Layout isHome={true}>
                 <div className="container">
-                    <h1>About Us</h1>
-                    <h2>Hi, I'm Lauren the owner of Crawley Dog Walkers.</h2>
-                    <p>
-                    I am offering a dog walking and pet sitting service in Crawley and
-                    the surrounding areas. I am a caring and passionate person and
-                    would like to think that this is reflected in the high level of
-                    service that I offer.
-                    </p>
-                    <p>
-                    I created this service because I am passionate about animals
-                    (especially dogs!) and would like to help owners make a positive
-                    impact on their pet's happiness, health and exercise needs.
-                    </p>
-                    <p>
-                    To read more about me and for more information about the services
-                    I offer please have a look around my website or check out my
-                    <a href="https://www.facebook.com/Crawleydogwalk/" target="_blank"
-                        >Facebook
-                        <b-icon
-                        pack="fab"
-                        size="is-small"
-                        icon="facebook-square"
-                        ></b-icon
-                    ></a>
-                    and
-                    <a
-                        href="https://www.instagram.com/crawleydogwalking/"
-                        target="_blank"
-                        >Instagram <b-icon pack="fab" icon="instagram"></b-icon
-                    ></a>
-                    accounts.
-                    </p>
-
-                    <section className="post-feed">
-                    <Card image={lauren} title="Lauren" body="lorem ipsum delds dkjfns ewdsjfn asjnd"/>
-                    </section>
-
-                    <h2 class="title">Arrange a Meeting!</h2>
                     <h1 class="title">Dog Walking</h1>
                     <p>
                         We provide an excellent dog walking service Monday to Saturday with
@@ -72,8 +35,7 @@ const Index = ({ data, location, pageContext }) => {
                     </p>
                     <p>Additional dogs can be added at a discount from just £5.</p>
                     <p>
-                        You can find all the pricing information
-                        <a href="./prices">here</a>.
+                        You can find all the pricing information <a href="./prices">here</a>.
                     </p>
                     <p>
                         The team are fully DBS checked and qualified in Dog First Aid, so
@@ -101,8 +63,34 @@ const Index = ({ data, location, pageContext }) => {
                         are opened/closed and there's a general presence in the property
                         while you're away.
                     </p>
+                    <h1>Testimonials</h1>
+                    <main>
+                        <ul>
+                            <li>
+                                <img src={lauren} />
+                                <div class="content">
+                                <span>Leann, Northgate</span>
+                                    <p>Very lovely kind girl who is professional and trustworthy to take care of all fur baby's, highly recommend!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src={ghost} />
+                                <div class="content">
+                                    <span>Tanya, Pound Hill</span>
+                                    <p>I can recommend this lovely young lady to take care of your dogs or cats. Walking or pet sitting, Good prices for a good service</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src={lauren} />
+                                <div class="content">
+                                <span>Tanya, Pound Hill</span>
+                                    <p>I can recommend this lovely young lady to take care of your dogs or cats. Walking or pet sitting, Good prices for a good service</p>
+                                </div>
+                            </li>
+                        </ul>         
+                    </main>
                     <hr></hr>
-                    <h1>Blog Post</h1>
+                    <h1>Blog Posts</h1>
                     <section className="post-feed">
                         {posts.map(({ node }) => (
                             // The tag below includes the markup for each post - components/common/PostCard.js
