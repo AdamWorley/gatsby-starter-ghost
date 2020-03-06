@@ -5,7 +5,9 @@ import { graphql } from 'gatsby'
 import { Layout, Card, PostCard, Pagination } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import lauren from "../images/lauren.jpg"
-import ghost from "../images/ghost-icon.png"
+import barny from "../images/barny.jpeg"
+import staf from "../images/staf.jpeg"
+import dog from "../images/dog.jpeg"
 
 /**
 * Main index page (home page)
@@ -31,7 +33,7 @@ const Index = ({ data, location, pageContext }) => {
                     <p>
                         You can choose either a Solo walk, for those dogs that may not get
                         on well with others, or group walks with up to 4 dogs at a time, you
-                        can also choose if you would like 40 minutes or an hour session.
+                        can also choose if you would like 30 minutes or an hour session.
                     </p>
                     <p>Additional dogs can be added at a discount from just £5.</p>
                     <p>
@@ -69,23 +71,23 @@ const Index = ({ data, location, pageContext }) => {
                             <li>
                                 <img src={lauren} />
                                 <div class="content">
-                                <span>Leann, Northgate</span>
                                     <p>Very lovely kind girl who is professional and trustworthy to take care of all fur baby's, highly recommend!</p>
+                                <span class="quote">Leann, Northgate</span>
                                 </div>
                             </li>
                             <li>
-                                <img src={ghost} />
+                                <img src={barny} />
                                 <div class="content">
-                                    <span>Tanya, Pound Hill</span>
                                     <p>I can recommend this lovely young lady to take care of your dogs or cats. Walking or pet sitting, Good prices for a good service</p>
+                                    <span class="quote">Tanya, Pound Hill</span>
                                 </div>
                             </li>
                             <li>
-                                <img src={lauren} />
+                                <img src={dog} />
                                 <div class="content">
-                                <span>Tanya, Pound Hill</span>
-                                    <p>I can recommend this lovely young lady to take care of your dogs or cats. Walking or pet sitting, Good prices for a good service</p>
+                                    <p>Lovely lady, very professional, my dogs are normally very nervous around other people but she took the time to sit down ad come over to meet them and now they know who she is and I wouldn't recommend anyone else! Massive 5 star!</p>
                                 </div>
+                                <span class="quote">Curtis, Maidenbower</span>
                             </li>
                         </ul>         
                     </main>
