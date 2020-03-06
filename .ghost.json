@@ -1,10 +1,10 @@
 {
   "development": {
     "apiUrl": "https://cms.adamworley.com",
-    "contentApiKey": "180ab3bd99aaa070f3e7f046d9"
+    "contentApiKey": "b48261547de143bb1368651c19"
   },
   "production": {
     "apiUrl": "https://cms.adamworley.com",
-    "contentApiKey": "180ab3bd99aaa070f3e7f046d9"
+    "contentApiKey": "b48261547de143bb1368651c19"
   }
 }
