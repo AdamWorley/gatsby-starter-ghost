@@ -22,7 +22,7 @@ const Index = ({ data, location, pageContext }) => {
 
     return (
         <>
-            <MetaData location={location} />
+            <MetaData location={location} title="Home" />
             <Layout isHome={true}>
                 <div className="container">
                     <h1 class="title">Dog Walking</h1>

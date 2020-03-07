@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { MetaData } from '../components/common/meta'
 import { Layout } from '../components/common'
 
 
-const Contact = () => (
+const Contact = () =>{
+  return (
+      <div>
+        <MetaData location={location} title="Contact"/>
   <Layout>
     <div className="container">
       <h1 className="title">Contact</h1>
@@ -36,7 +40,7 @@ const Contact = () => (
         </ul>
       </form>
     </div>
-  </Layout>)
+  </Layout></div>)}
 
 export default Contact
 
