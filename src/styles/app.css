@@ -1220,31 +1220,31 @@ select{
 	color:red;
 }
 
-main ul {
+.testimonial ul {
     text-decoration: none;
     list-style-type: none;
     padding: 0;
 }
 
-main li {
+.testimonial li {
     background: white;
     /* border-radius: 1em; */
     padding: .8em;
     margin: 1em 0;
-    box-shadow: 15px 21px 40px 0px rgba(0,0,0,0.04);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
   }
 
-main img {
+.testimonial img {
     width: 100%;
-    /* border-radius: .5em; */
+    border-radius: .5em;
 }
 
-main .content {
+.testimonial content {
     padding: .5em;
   }
 
 .quote {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -1253,13 +1253,13 @@ main .content {
 }
 
 @media only screen and (min-width: 768px) {
-  main li {
+  .testimonial li {
     display: grid;
     grid-column-gap: 1em;
     grid-template-columns: 180px auto;
   }
 
-  main li:nth-child(even) {
+  .testimonial li:nth-child(even) {
     direction: rtl;
   }
 }

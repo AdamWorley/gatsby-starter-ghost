@@ -35,14 +35,6 @@ const Index = ({ data, location, pageContext }) => {
                         on well with others, or group walks with up to 4 dogs at a time, you
                         can also choose if you would like 30 minutes or an hour session.
                     </p>
-                    <p>Additional dogs can be added at a discount from just £5.</p>
-                    <p>
-                        You can find all the pricing information <a href="./prices">here</a>.
-                    </p>
-                    <p>
-                        The team are fully DBS checked and qualified in Dog First Aid, so
-                        you can be safe in the knowledge your dog will be in safe hands.
-                    </p>
                     <h1 class="title">Pet Sitting</h1>
                     <p>
                         If you're going to be away and would like for your pets to be looked
@@ -54,19 +46,20 @@ const Index = ({ data, location, pageContext }) => {
                         strive to keep them safe and comfortable in the safety of their own
                         home.
                     </p>
-                    <p>
-                        The pets we are trained to look after range from cats and dogs, to
-                        reptiles and amphibians and most things in between (no alligators
-                        please).
-                    </p>
-                    <p>
-                        Another benefit is peace of mind of your own property, we will
-                        ensure that it is locked and secured at all times and that curtains
-                        are opened/closed and there's a general presence in the property
-                        while you're away.
-                    </p>
+                    <h1>Contact Us Now!</h1>
+                    <p>If you're interested in keeping your dogs healthy and sociable or would like your beloved moggy to be checked on please contact us!<br/>
+                    There's so many ways to get in touch, simply select the option that suits you!</p>
+                    {/* <p>Fill out our<Link to="/contact"> contact page here</Link></p>
+                    <p>Give us ring on the dog and bone <a href="tel:07849838319">07849838319</a></p>
+                    <p>Or you can email <a href="mailto:lauren@crawleydogwalkers.com">lauren@crawleydogwalkers.com</a></p> */}
+                    <ul>
+                    <li><a className="site-nav-item" href="tel:07849838319"><i class="fa fa-phone"></i> 07849838319</a></li>
+                    <li><a className="site-nav-item" href="https://facebook.com"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a className="site-nav-item" href="mailto:lauren@crawleydogwalkers.com"><i class="fa fa-envelope"></i> Email</a></li>
+                    </ul>
                     <h1>Testimonials</h1>
-                    <main>
+                    <h2>Don't just take our word, read what our customers have to say!</h2>
+                    <div class="testimonial">
                         <ul>
                             <li>
                                 <img src={lauren} />
@@ -90,7 +83,7 @@ const Index = ({ data, location, pageContext }) => {
                                 <span class="quote">Curtis, Maidenbower</span>
                             </li>
                         </ul>         
-                    </main>
+                    </div >
                     <hr></hr>
                     <h1>Blog Posts</h1>
                     <section className="post-feed">
